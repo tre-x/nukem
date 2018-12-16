@@ -1,0 +1,151 @@
+<html>
+   <head>
+      <title>Nuke'm Options</title>
+      <style>
+         h1 {
+         	font-family: 'Courier New';
+         	text-align: center;
+         	color: orangered;
+         	font-size: 200%;
+         	font-weight: bold; 
+         }
+         p {
+         	font-family: 'Courier New';
+         	font-size: 130%;
+         }
+         h2 {
+         	font-family: 'Courier New';
+         	font-size: 200%;
+         }
+         h1.section {
+         	font-style: italic;
+         }
+         p.warning {
+         	font-weight: bold;
+         	color: red;
+         	font-size: 100%;
+         }
+         button.save {
+         	font-family: 'Courier New';
+         	border-radius: 0px;
+         	margin-top: 30px;
+			 border: none;
+         	padding: 10px 32px;
+         	text-align: center;
+         	display: inline-block;
+         }
+         select.option_toggle {
+			 background-color: white;
+         	width: 100%;
+         	border-radius: 1px;
+         	font-family: 'Courier New';
+         	font-weight: bold;
+         }
+         table {
+         	font-family: 'Courier New';
+         	border-collapse: collapse;
+         	width: 12.5%;
+         }
+         th,td,td.s {
+         	border: 1px solid #000000;
+         	text-align: left;
+         	padding: 4px;
+         }
+         td.s{
+         	border: 0px solid #000000;
+         }
+         option {
+         	font-weight: bold;
+         	font-family: 'Courier New';
+         }
+         select { 
+         	border-radius: 0px;
+         	border: none;
+         }
+		 #footer p {
+		 	font-family:'Courier New';
+         	font-style: italic;
+         	font-size: 90%;
+		 }
+      </style>
+   </head>
+   <body>
+      <div>
+         <h1>NUKE'M v1.9</h1>
+         <center>
+            <table>
+               <tr>
+                  <th>Nuke Tabs</th>
+                  <td>
+                     <select id="kill_option" class="option_toggle">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <th>Nuke Passwords</th>
+                  <td>
+                     <select id="pwd_option" class="option_toggle">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <th>Nuke Cookies</th>
+                  <td>
+                     <select id="cookie_option" class="option_toggle">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                     </select>
+                  </td>
+               <tr>
+                  <th>Nuke Downloads</th>
+                  <td>
+                     <select id="downloads_option" class="option_toggle">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <th>Nuke Bookmarks</th>
+                  <td>
+                     <select id="bookmarks_option" class="option_toggle">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                     </select>
+                  </td>
+               </tr>
+				<tr>
+                  <th>Auto-Nuke History</th>
+                  <td>
+                     <select id="nohistory_option" class="option_toggle">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                     </select>
+                  </td>
+               </tr>
+            </table>
+			 <p style="font-size: 120%;"><strong>AUTO-NUKE HISTORY NOTICE: </strong><a href="https://ryland192000.github.io/homepage/nukem.html">READ HERE</a> IF YOU ARE EXPIERENCING ISSUES.</p>
+            <table>
+               <tr>
+                  <td class="s">
+                     <center>
+                        <button id="save" class="save">Save</button>
+                     </center>
+                  </td>
+               </tr>
+            </table>
+            <script src="bg.js"></script>
+         </center>
+      </div>
+      <div id="footer">
+         <center>
+            <p>Nuke'm Version 2 - Developed by ryland192000 </p>
+            <p><a href="https://ryland192000.github.io/homepage/" target="_blank">WEBSITE</a></p>
+            <a rel="license"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+         </center>
+      </div>
+   </body>

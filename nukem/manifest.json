@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Nuke'm - Browsing Data Cleaner",
+  "description": "A lightweight and easy-to-use extension that cleans up browsing cache, history, localstorage, and more!",
+  "version": "2",
+  "author": "ryland192000",
+  "icons":{
+    "16": "assets/icon.png",
+    "48": "assets/icon2.png" },
+  "browser_action": {
+   "default_icon": "assets/icon.png"
+  },
+    "background": {
+        "scripts": ["bg.js","cm.js","anh.js"]
+    },
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+  "permissions": [
+      "browsingData",
+      "notifications",
+      "contextMenus",
+      "bookmarks",
+      "tabs",
+      "history"
+]
+}
