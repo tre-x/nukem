@@ -1,151 +1,259 @@
+<!DOCTYPE HTML>
+<!-- (c) 192000 https://ryland192000.github.io/homepage/ !-->
 <html>
-   <head>
-      <title>Nuke'm Options</title>
-      <style>
-         h1 {
-         	font-family: 'Courier New';
-         	text-align: center;
-         	color: orangered;
-         	font-size: 200%;
-         	font-weight: bold; 
-         }
-         p {
-         	font-family: 'Courier New';
-         	font-size: 130%;
-         }
-         h2 {
-         	font-family: 'Courier New';
-         	font-size: 200%;
-         }
-         h1.section {
-         	font-style: italic;
-         }
-         p.warning {
-         	font-weight: bold;
-         	color: red;
-         	font-size: 100%;
-         }
-         button.save {
-         	font-family: 'Courier New';
-         	border-radius: 0px;
-         	margin-top: 30px;
-			 border: none;
-         	padding: 10px 32px;
-         	text-align: center;
-         	display: inline-block;
-         }
-         select.option_toggle {
-			 background-color: white;
-         	width: 100%;
-         	border-radius: 1px;
-         	font-family: 'Courier New';
-         	font-weight: bold;
-         }
-         table {
-         	font-family: 'Courier New';
-         	border-collapse: collapse;
-         	width: 12.5%;
-         }
-         th,td,td.s {
-         	border: 1px solid #000000;
-         	text-align: left;
-         	padding: 4px;
-         }
-         td.s{
-         	border: 0px solid #000000;
-         }
-         option {
-         	font-weight: bold;
-         	font-family: 'Courier New';
-         }
-         select { 
-         	border-radius: 0px;
-         	border: none;
-         }
-		 #footer p {
-		 	font-family:'Courier New';
-         	font-style: italic;
-         	font-size: 90%;
-		 }
-      </style>
-   </head>
-   <body>
-      <div>
-         <h1>NUKE'M v1.9</h1>
-         <center>
-            <table>
-               <tr>
-                  <th>Nuke Tabs</th>
-                  <td>
-                     <select id="kill_option" class="option_toggle">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                     </select>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Nuke Passwords</th>
-                  <td>
-                     <select id="pwd_option" class="option_toggle">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                     </select>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Nuke Cookies</th>
-                  <td>
-                     <select id="cookie_option" class="option_toggle">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                     </select>
-                  </td>
-               <tr>
-                  <th>Nuke Downloads</th>
-                  <td>
-                     <select id="downloads_option" class="option_toggle">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                     </select>
-                  </td>
-               </tr>
-               <tr>
-                  <th>Nuke Bookmarks</th>
-                  <td>
-                     <select id="bookmarks_option" class="option_toggle">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                     </select>
-                  </td>
-               </tr>
-				<tr>
-                  <th>Auto-Nuke History</th>
-                  <td>
-                     <select id="nohistory_option" class="option_toggle">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                     </select>
-                  </td>
-               </tr>
-            </table>
-			 <p style="font-size: 120%;"><strong>AUTO-NUKE HISTORY NOTICE: </strong><a href="https://ryland192000.github.io/homepage/nukem.html">READ HERE</a> IF YOU ARE EXPIERENCING ISSUES.</p>
-            <table>
-               <tr>
-                  <td class="s">
-                     <center>
-                        <button id="save" class="save">Save</button>
-                     </center>
-                  </td>
-               </tr>
-            </table>
-            <script src="bg.js"></script>
-         </center>
-      </div>
-      <div id="footer">
-         <center>
-            <p>Nuke'm Version 2 - Developed by ryland192000 </p>
-            <p><a href="https://ryland192000.github.io/homepage/" target="_blank">WEBSITE</a></p>
+
+<head>
+    <title>Nuke'm Options</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'PT Sans', sans-serif;
+            text-align: center;
+            letter-spacing: 10px;
+            color: orange;
+            font-size: 200%;
+            font-weight: bold;
+        }
+        
+        p {
+            font-family: 'Roboto Mono', monospace;;
+            font-size: 130%;
+        }
+        
+        h2 {
+            font-family: 'PT Sans', sans-serif;
+            text-align: center;
+            letter-spacing: 10px;
+            color: orange;
+			margin-top: -15px;
+            font-size: 150%;
+            font-weight: bold;
+        }
+		
+        .save {
+            font-family: 'Roboto Mono', monospace;
+            border-radius: 0px;
+            margin-top: 30px;
+            border: none;
+            padding: 10px 32px;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        select.option_toggle {
+            background-color: white;
+            width: 100%;
+            border-radius: 1px;
+            font-family: 'Roboto Mono', monospace;;
+			font-weight: bold;
+        }
+        
+        option {
+            font-weight: bold;
+            font-family: 'Roboto Mono', monospace;;
+        }
+		
+        #footer p {
+            font-family: 'Roboto Mono', monospace;
+            font-style: italic;
+            font-size: 90%;
+        }
+		
+		#footer p a {
+			font-style: normal;
+			text-decoration: none;
+			color: red;
+			font-weight: bold;
+			transition: 0.5s;
+		}
+		
+		#footer p a:hover {
+			color: darkred;
+		}
+		
+		#options {
+			margin-left: -70px;
+		}
+		
+		#options p {
+			margin-left: 70px;
+			font-size: 13px;
+			color: limegreen;
+		}
+		
+		#labels {
+			margin: auto;
+		}
+		
+		#labels ul {
+			list-style-type: none;
+			vertical-align: top;
+			
+		}
+		
+		#labels ul li {
+			margin-bottom: 20px;
+		}
+		
+		#labels ul li{
+			font-family: 'Roboto Mono', monospace;
+            font-size: 110%;
+			vertical-align: top;
+		}
+		
+		#selections ul {
+			list-style-type: none;
+			vertical-align: top;
+		}
+		
+		#selections ul li {
+			margin-top: 18px;
+		}
+		
+		#selections ul li select {
+			border-radius: 5px;
+			background-color: lightgrey;
+            border: none;
+			width: 70px;
+			padding: 5px 5px 5px 15px;
+			margin-top: -5px;
+		}
+		
+		#labels {
+			display: inline-block;
+		}
+		
+		#selections {
+			display: inline-block;
+		}
+		
+		.tooltip {
+			display: none;
+			background: #FFB990;
+			margin-left: 20px;
+			padding: 10px;
+			font-size: 10px;
+			position: absolute;
+			z-index: 1000;
+			width: 250px;
+			height: auto;
+			opacity: 0.9;
+			border-radius: 5px;
+		}
+		
+		#labels li:hover .tooltip {
+    		display: block;
+		}
+		
+		#save {
+			margin-left: 70px;
+			border: 0px;
+			padding: 10px;
+			font-family: 'Roboto Mono', monospace;
+			border-radius: 5px;
+			background-color: lightgrey;
+		}
+		
+		#save:hover {
+			font-weight: bold;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <center>
+		<img src="assets/newicon4.png">
+        <h1>NUKE'M</h1>
+		<h2>v2.1</h2>
+		<hr style="width: 300px; background-color: orange; border: 0; height: 2px;">
+        <div id="options">
+			<div id="labels">
+				<ul>
+					<li>
+						Nuke Tabs
+						<span class="tooltip">Clear tabs when Nuke'm is activated.</span>
+            		</li>
+					<li>
+						Nuke Passwords
+						<span class="tooltip">Clear passwords when Nuke'm is activated.</span>
+					</li>
+					<li>
+						Nuke Cookies
+						<span class="tooltip">Clear cookies when Nuke'm is activated.</span>
+					</li>
+					<li>
+						Nuke Downloads
+						<span class="tooltip">Clear downloads when Nuke'm is activated.</span>
+					</li>
+					<li>
+						Nuke Bookmarks
+						<span class="tooltip">Clear all bookmarks when Nuke'm is activated.</span>
+					</li>
+					<li>
+						Auto-Nuke History
+						<span class="tooltip">Disable history logging for each website you visit.</span>
+					</li>
+				</ul>
+			</div>
+			<div id="selections">
+				<ul>
+					<li>
+						<select id="tabs_option" class="option_toggle">
+                        	<option value="No">No</option>
+                        	<option value="Yes">Yes</option>
+						</select>
+					</li>
+					<li>
+						<select id="pwd_option" class="option_toggle">
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                    	</select>
+					</li>
+					<li>
+						<select id="cookie_option" class="option_toggle">
+                        	<option value="No">No</option>
+                        	<option value="Yes">Yes</option>
+                    	</select>
+					</li>
+					<li>
+						<select id="downloads_option" class="option_toggle">
+                        	<option value="No">No</option>
+                        	<option value="Yes">Yes</option>
+                    	</select>
+					</li>
+					<li>
+						<select id="bookmarks_option" class="option_toggle">
+                        	<option value="No">No</option>
+                        	<option value="Yes">Yes</option>
+                    	</select>
+					</li>
+					<li>
+						<select id="nohistory_option" class="option_toggle">
+							<option value="No">No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<button id="save">SAVE OPTIONS</button>
+			<p id="saved"></p>
+        </div>
+		</center>
+    </div>
+    <div id="footer">
+		<hr style="width: 300px; background-color: orange; border: 0; height: 2px;">
+        <center>
+			<p style="color: red;"><strong>AUTO-NUKE HISTORY NOTICE:</strong><br>
+			<a style="text-decoration: underline; font-style: italic;" href="https://ryland192000.github.io/homepage/nukem.html">READ HERE</a> IF YOU ARE EXPERIENCING ISSUES
+			</p>
+            <p>Nuke'm Version 2.1 - Developed by 192000 </p>
+            <p><a href="https://ryland192000.github.io/homepage/" target="_blank">192000 WEBSITE</a></p>
             <a rel="license"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-         </center>
-      </div>
-   </body>
+        </center>
+    </div>
+	<script src="bg.js"></script>
+</body>
+
+</html>
