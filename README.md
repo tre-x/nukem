@@ -1,12 +1,8 @@
 # Nuke'm - Browsing Data Cleaner for Google Chrome
 
-[![Build Status](https://raw.githubusercontent.com/ryland192000/homepage/master/media/passing.png)](https://ryland192000.github.io/homepage/nukem.html)
-
 Nuke'm is a lightweight and easy-to-use chrome extension that clears basic and advanced Google Chrome browsing data.
 
 Nuke'm deletes:
-  - LocalStorage
-  - History
   - All Cache
   - IndexedDB
   - FileSystems
@@ -14,6 +10,8 @@ Nuke'm deletes:
   - PluginData
   - Server Bound Certificates
   - WebSQL Data
+  - LocalStorage (Optional)
+  - History (Optional
   - Passwords (Optional)
   - Downloads(Optional)
   - Cookies (Optional)
@@ -21,6 +19,12 @@ Nuke'm deletes:
   - Bookmarks (Optional)
 
 # New Features
+
+#### Version 3
+  -New options menu design, migrated from select options to checkbox options
+  -You can now clear cookies automatically with the Auto-Nuke Cookies setting
+  -LocalStorage and History are now optional for clearing
+  -Redesigned and simplified the Nuke'm script, you might have to re-adjust your settings for Nuke'm to work correctly.
 #### Version 2.1
   - Options menu completely redesigned
   - Icon change
