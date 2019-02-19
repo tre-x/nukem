@@ -21,10 +21,10 @@ Nuke'm deletes:
 # New Features
 
 #### Version 3
-  -New options menu design, migrated from select options to checkbox options
-  -You can now clear cookies automatically with the Auto-Nuke Cookies setting
-  -LocalStorage and History are now optional for clearing
-  -Redesigned and simplified the Nuke'm script, you might have to re-adjust your settings for Nuke'm to work correctly.
+  - New options menu design, migrated from select options to checkbox options
+  - You can now clear cookies automatically with the Auto-Nuke Cookies setting
+  - LocalStorage and History are now optional for clearing
+  - Redesigned and simplified the Nuke'm script, you might have to re-adjust your settings for Nuke'm to work correctly.
 #### Version 2.1
   - Options menu completely redesigned
   - Icon change
