@@ -2,14 +2,15 @@
 
 var options = {
 	NukeTabs: document.querySelector('#nuketabs'),
+	NukeCache: document.querySelector('#nukecache'),
 	NukePasswords: document.querySelector('#nukepwds'),
 	NukeCookies: document.querySelector('#nukecookies'),
 	NukeHistory: document.querySelector('#nukehistory'),
 	NukeLocalStorage: document.querySelector('#nukels'),
 	NukeDownloads: document.querySelector('#nukedownloads'),
-	NukeBookmarks: document.querySelector('#nukebookmarks'),
 	ANukeHistory: document.querySelector('#autonukehistory'),
 	ANukeCookies: document.querySelector('#autonukecookies'),
+	EnableNotifs: document.querySelector('#enablenotifs')
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	restore_options()
 	
 })
+
 var notify = function () {
     chrome.notifications.create("notify_user", {
         type:    "basic",
@@ -67,9 +69,9 @@ var notify = function () {
 chrome.browserAction.onClicked.addListener(function(tab) {
 	
 	chrome.browsingData.remove({}, {
-		"appcache": true,
-		"cache": true,
-		"cacheStorage": true,
+		"appcache": Boolean(Number(localStorage.getItem('nukecache'))),
+		"cache": Boolean(Number(localStorage.getItem('nukecache'))),
+		"cacheStorage": Boolean(Number(localStorage.getItem('nukecache'))),
 		"fileSystems": true,
 		"formData": true,
 		"indexedDB": true,
@@ -83,8 +85,21 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 		"history": Boolean(Number(localStorage.getItem('nukehistory')))
 	},function(){
 		console.log('nuked')
-		notify()
+		if (localStorage.getItem('enablenotifs') == 1) {
+			notify()
+		}
 	})
+	
+	if (localStorage.getItem('nuketabs') == 1) {
+		chrome.tabs.query({}, function (tabArray) {
+			for (var i = 0; i <= tabArray.length-1; i++) {
+                chrome.tabs.remove(tabArray[i].id);
+        	}
+            chrome.tabs.create({
+            	url: "chrome://newtab"
+			})
+		});
+	}
 	
 })
 

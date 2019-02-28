@@ -66,7 +66,7 @@
         
         #options {
             display: inline-block;
-            height: 450px;
+            height: 520px;
             margin-left: 0px;
             border: 2px solid orange;
 			padding: 50px;
@@ -92,6 +92,7 @@
 			border: 1px solid #9B3F00;
             cursor: pointer;
 			display: block;
+			text-decoration: none;
         }
 		
 		#save:hover {
@@ -122,6 +123,11 @@
                         <input type="checkbox" id="nuketabs" />
                         <div class="control_indicator"></div>
                     </label>
+					<label class="control control-checkbox">
+                        Nuke Cache
+                        <input type="checkbox" id="nukecache" />
+                        <div class="control_indicator"></div>
+                    </label>
                     <label class="control control-checkbox">
                         Nuke Passwords
                         <input type="checkbox" id="nukepwds"/>
@@ -147,11 +153,6 @@
                         <input type="checkbox" id="nukedownloads"/>
                         <div class="control_indicator"></div>
                     </label>
-					<label class="control control-checkbox">
-                        Nuke Bookmarks
-                        <input type="checkbox" id="nukebookmarks"/>
-                        <div class="control_indicator"></div>
-                    </label>
 					<p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">Auto-Nuke settings</p>
 					<label class="control control-checkbox">
 						Auto-Nuke History
@@ -161,6 +162,12 @@
 					<label class="control control-checkbox">
                         Auto-Nuke Cookies
                         <input type="checkbox" id="autonukecookies"/>
+                        <div class="control_indicator"></div>
+                    </label>
+					<p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">General settings</p>
+					<label class="control control-checkbox">
+						Enable Notifications
+                        <input type="checkbox" id="enablenotifs"/>
                         <div class="control_indicator"></div>
                     </label>
                 </div>
