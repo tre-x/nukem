@@ -18,8 +18,15 @@ Nuke'm deletes:
   - Tabs (Optional)
 
 # New Features
+#### Version 3.3
+  - Improved notification system
+    - Notifications now show how many history entries & cookies were removed
+  - Default settings for new users
+    - History, Cache, and Notifications are enabled by default on a new install
+
 #### Version 3.2
   - Manifest update
+  - New icon
 
 #### Version 3.1
   - Cache clearing is now optional
@@ -55,12 +62,12 @@ Simply click on the extension icon and all of your browsing data (+ configured b
 You can configure what Nuke'm deletes in the options menu, by right clicking on the icon and selecting *Options*.
 
 ### Screenshots
-![Screenshot 2](https://lh3.googleusercontent.com/zAVVXqyiuvtJHQHk57U_0QBd850CZO4cZ3lD4NBn60cN6raRsWWoFi-SBFbRWerko2o7Rdyaanc=w640-h400-e365)
-![Screenshot 1](https://lh3.googleusercontent.com/9Hb8IFs3iwTpxBb6rFRYubRe7U5dqoJ2lU-I_zD5213_RKanzDIovXifnej3XIFDYtKCRA4c=w640-h400-e365)
-![Screenshot 3](https://lh3.googleusercontent.com/Q_vQnrsCRlxQsv_CiRWbN_60cA7nCVjlsu9ydlwze-aFkNN-82t05NxanZjXVTrpAhewonOyhQ=w640-h400-e365)
+![Screenshot 1](https://lh3.googleusercontent.com/W6gwPWZQj8_DaxWyr6F2a4otovK3XWzWrGjQjLwg3_HY0KXqFUY5de67H2LU9kucbRR2fuvk3w=w640-h400-e365)
+![Screenshot 2](https://lh3.googleusercontent.com/fM2bf9va3Wo6B48DDPjgxd0DO1gLlJGefvkonxJj4kaOaffS65ycMH3tuvjwjlsSjL9FR7ghX3E=w640-h400-e365)
+![Screenshot 3](https://lh3.googleusercontent.com/xIgPDbFOaEgQNbT6691xoSwYfNw6u6rfdQJJsR7UtKNvVK7CqV8yinuMvVCORI8mvaWwutA6og=w640-h400-e365)
 
 
 
    [Google Chrome]: <https://www.google.com/chrome/>
-   [gitlink]: <https://github.com/ryland192000/nukem/archive/master.zip>
+   [gitlink]: <https://github.com/192000/nukem/archive/master.zip>
    [weblink]: <https://chrome.google.com/webstore/detail/nukem-browsing-data-clean/enfegiojkdinjbgodgigkimlgacpbene>
