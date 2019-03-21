@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Nuke'm - Browsing Data Cleaner",
   "description": "Clean up your browsing data easily.",
-  "version": "3.2",
+  "version": "3.3",
   "author": "ryland192000",
   "icons":{
     "16": "assets/newicon.png",
@@ -13,7 +13,7 @@
    "default_icon": "assets/newicon.png"
   },
   "background": {
-      "scripts": ["bg.js","cm.js","an.js"]
+      "scripts": ["bg.js","an.js"]
   },
   "options_ui": {
       "page": "options.html",
@@ -22,7 +22,6 @@
   "permissions": [
       "browsingData",
       "notifications",
-      "contextMenus",
       "tabs",
       "history",
 	  "cookies",

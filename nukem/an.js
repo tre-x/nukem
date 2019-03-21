@@ -1,4 +1,4 @@
-//(c) 192000 https://ryland192000.github.io/homepage/
+//(c) 192000 https://192000.github.io/192000/
 chrome.history.onVisited.addListener(function(HistoryItem) {
     var o = localStorage["autonukehistory"];
 	

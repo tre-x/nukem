@@ -1,194 +1,182 @@
 <!DOCTYPE HTML>
-<!-- (c) 192000 https://ryland192000.github.io/homepage/ !-->
 <html>
-
-<head>
-    <title>Nuke'm Options</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<link type="text/css" href="style.css" rel="stylesheet">
-    <style>
-        h1 {
-            font-family: 'PT Sans', sans-serif;
-            text-align: center;
-            letter-spacing: 10px;
-            color: orange;
-            font-size: 200%;
-            font-weight: bold;
-        }
-        
-        h2 {
-            margin-bottom: 15px;
-        }
-        
-        p {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 130%;
-        }
-        
-        h2 {
-            font-family: 'PT Sans', sans-serif;
-            text-align: center;
-            letter-spacing: 10px;
-            color: orange;
-            margin-top: -15px;
-            font-size: 150%;
-            font-weight: bold;
-        }
-        
-        .save {
-            font-family: 'Roboto Mono', monospace;
-            border-radius: 0px;
-            margin-top: 30px;
-            border: none;
-            padding: 10px 32px;
-            text-align: center;
-            display: inline-block;
-        }
-        
-        #footer p {
-            font-family: 'Roboto Mono', monospace;
-            font-style: italic;
-            font-size: 90%;
-        }
-        
-        #footer p a {
-            font-style: normal;
-            text-decoration: none;
-            color: red;
-            font-weight: bold;
-            transition: 0.5s;
-        }
-        
-        #footer p a:hover {
-            color: darkred;
-        }
-        
-        #options {
-            display: inline-block;
-            height: 520px;
-            margin-left: 0px;
-            border: 2px solid orange;
-			padding: 50px;
-        }
-        
-        #options p {
-            margin-left: 70px;
-            font-size: 13px;
-            color: limegreen;
-        }
-        
-        #save {
-            position: relative;
-			margin: 20px auto;
-            border: 0px;
-            padding: 10px;
-            font-family: 'PT Sans', sans-serif;
-			font-size: 17px;
-            border-radius: 5px;
-            background-color: orange;
-            transition: 0.5s;
-			color: white;
-			border: 1px solid #9B3F00;
-            cursor: pointer;
-			display: block;
-			text-decoration: none;
-        }
-		
-		#save:hover {
-			background-color: darkorange;
-			border-radius: 10px;
-		}
-        
-        #saved {
-            position: relative;
-            margin-top: -15px;
-			margin-right: 70px;
-			padding: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="container">
-        <center>
+   <head>
+      <title>Nuke'm Options</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+      <link type="text/css" href="style.css" rel="stylesheet">
+      <style>
+         h1 {
+         font-family: 'PT Sans', sans-serif;
+         text-align: center;
+         letter-spacing: 10px;
+         color: orange;
+         font-size: 200%;
+         position: absolute;
+         display: inline-block;
+         font-weight: bold;
+         margin-top: 35px;
+         }
+         img {
+         margin-left: -150px;
+         margin-bottom: 20px;
+         }
+         h2 {
+         margin-bottom: 15px;
+         }
+         p {
+         font-family: 'Roboto Mono', monospace;
+         font-size: 130%;
+         }
+         h2 {
+         font-family: 'PT Sans', sans-serif;
+         text-align: center;
+         letter-spacing: 10px;
+         color: orange;
+         margin-top: -15px;
+         font-size: 150%;
+         font-weight: bold;
+         }
+         .save {
+         font-family: 'Roboto Mono', monospace;
+         border-radius: 0px;
+         margin-top: 30px;
+         border: none;
+         padding: 10px 32px;
+         text-align: center;
+         display: inline-block;
+         }
+         #footer p {
+         font-family: 'Roboto Mono', monospace;
+         font-style: italic;
+         font-size: 90%;
+         }
+         #footer p a {
+         font-style: normal;
+         text-decoration: none;
+         color: red;
+         font-weight: bold;
+         transition: 0.5s;
+         }
+         #footer p a:hover {
+         color: darkred;
+         }
+         #options {
+         display: inline-block;
+         height: 520px;
+         margin-left: 0px;
+         border: 2px solid orange;
+         padding: 50px;
+         }
+         #options p {
+         margin-left: 70px;
+         font-size: 13px;
+         color: limegreen;
+         }
+         #save {
+         position: relative;
+         margin: 20px auto;
+         border: 0px;
+         padding: 10px;
+         font-family: 'PT Sans', sans-serif;
+         font-size: 17px;
+         border-radius: 5px;
+         background-color: orange;
+         transition: 0.5s;
+         color: white;
+         border: 1px solid #9B3F00;
+         cursor: pointer;
+         display: block;
+         text-decoration: none;
+         }
+         #save:hover {
+         background-color: darkorange;
+         border-radius: 10px;
+         }
+         #saved {
+         position: relative;
+         margin-top: -15px;
+         margin-right: 70px;
+         padding: 10px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <center>
             <img src="assets/newicon4.png">
             <h1>NUKE'M</h1>
             <h2 id="version">v<span></span></h2>
             <div id="options">
-                <div class="control-group">
-					<p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">Nuke settings</p>
-                    <label class="control control-checkbox">
-                        Nuke Tabs
-                        <input type="checkbox" id="nuketabs" />
-                        <div class="control_indicator"></div>
-                    </label>
-					<label class="control control-checkbox">
-                        Nuke Cache
-                        <input type="checkbox" id="nukecache" />
-                        <div class="control_indicator"></div>
-                    </label>
-                    <label class="control control-checkbox">
-                        Nuke Passwords
-                        <input type="checkbox" id="nukepwds"/>
-                        <div class="control_indicator"></div>
-                    </label>
-                    <label class="control control-checkbox">
-                        Nuke Cookies
-                        <input type="checkbox" id="nukecookies"/>
-                        <div class="control_indicator"></div>
-                    </label>
-					<label class="control control-checkbox">
-                        Nuke History
-                        <input type="checkbox" id="nukehistory"/>
-                        <div class="control_indicator"></div>
-                    </label>
-					<label class="control control-checkbox">
-                        Nuke Local Storage
-                        <input type="checkbox" id="nukels"/>
-                        <div class="control_indicator"></div>
-                    </label>
-					<label class="control control-checkbox">
-                        Nuke Downloads
-                        <input type="checkbox" id="nukedownloads"/>
-                        <div class="control_indicator"></div>
-                    </label>
-					<p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">Auto-Nuke settings</p>
-					<label class="control control-checkbox">
-						Auto-Nuke History
-                        <input type="checkbox" id="autonukehistory"/>
-                        <div class="control_indicator"></div>
-                    </label>
-					<label class="control control-checkbox">
-                        Auto-Nuke Cookies
-                        <input type="checkbox" id="autonukecookies"/>
-                        <div class="control_indicator"></div>
-                    </label>
-					<p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">General settings</p>
-					<label class="control control-checkbox">
-						Enable Notifications
-                        <input type="checkbox" id="enablenotifs"/>
-                        <div class="control_indicator"></div>
-                    </label>
-                </div>
-				<a id="save">SAVE OPTIONS</a>
-                <p id="saved"></p>
+               <div class="control-group">
+                  <p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">Nuke settings</p>
+                  <label class="control control-checkbox">
+                     Nuke Tabs
+                     <input type="checkbox" id="nuketabs" />
+                     <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-checkbox">
+                     Nuke Cache
+                     <input type="checkbox" id="nukecache" />
+                     <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-checkbox">
+                     Nuke Passwords
+                     <input type="checkbox" id="nukepwds"/>
+                     <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-checkbox">
+                     Nuke Cookies
+                     <input type="checkbox" id="nukecookies"/>
+                     <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-checkbox">
+                     Nuke History
+                     <input type="checkbox" id="nukehistory"/>
+                     <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-checkbox">
+                     Nuke Local Storage
+                     <input type="checkbox" id="nukels"/>
+                     <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-checkbox">
+                     Nuke Downloads
+                     <input type="checkbox" id="nukedownloads"/>
+                     <div class="control_indicator"></div>
+                  </label>
+                  <p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">Auto-Nuke settings</p>
+                  <label class="control control-checkbox">
+                     Auto-Nuke History
+                     <input type="checkbox" id="autonukehistory"/>
+                     <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-checkbox">
+                     Auto-Nuke Cookies
+                     <input type="checkbox" id="autonukecookies"/>
+                     <div class="control_indicator"></div>
+                  </label>
+                  <p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">General settings</p>
+                  <label class="control control-checkbox">
+                     Enable Notifications
+                     <input type="checkbox" id="enablenotifs"/>
+                     <div class="control_indicator"></div>
+                  </label>
+               </div>
+               <a id="save">SAVE OPTIONS</a>
+               <p id="saved"></p>
             </div>
-        </center>
-    </div>
-    <div id="footer">
-        <center>
+         </center>
+      </div>
+      <div id="footer">
+         <center>
             <p style="color: red;"><strong>AUTO-NUKE HISTORY NOTICE:</strong>
-                <br>
-                <a style="text-decoration: underline; font-style: italic;" href="https://192000.github.io/192000/nukem.html">READ HERE</a> IF YOU ARE EXPERIENCING ISSUES
+               <br>
+               <a style="text-decoration: underline; font-style: italic;" href="https://192000.github.io/192000/extensions.html">READ HERE</a> IF YOU ARE EXPERIENCING ISSUES
             </p>
-            <p>Nuke'm - Developed by 192000 </p>
-            <p><a href="https://192000.github.io/192000/" target="_blank">192000 WEBSITE</a></p>
-            <p><a href="https://github.com/192000/nukem/issues/new" target="_blank">REPORT AN ISSUE</a></p>
-            <a rel="license"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-        </center>
-    </div>
-    <script src="bg.js"></script>
-</body>
-
+            <p><a href="https://github.com/192000/nukem/issues" target="_blank">REPORT AN ISSUE</a></p>
+         </center>
+      </div>
+      <script src="bg.js"></script>
+   </body>
 </html>

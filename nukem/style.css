@@ -70,3 +70,10 @@
 .control-checkbox input:disabled ~ .control_indicator:after {
     border-color: #7b7b7b;
 }
+.input {
+	border: none;
+	background-color: #E6E6E6;
+	resize: none;
+	height: 20px;
+	color: orange;
+}
