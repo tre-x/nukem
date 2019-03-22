@@ -71,7 +71,7 @@ You can configure what Nuke'm deletes in the options menu, by right clicking on 
 ![Screenshot 1](https://lh3.googleusercontent.com/W6gwPWZQj8_DaxWyr6F2a4otovK3XWzWrGjQjLwg3_HY0KXqFUY5de67H2LU9kucbRR2fuvk3w=w640-h400-e365)
 ![Screenshot 2](https://lh3.googleusercontent.com/fM2bf9va3Wo6B48DDPjgxd0DO1gLlJGefvkonxJj4kaOaffS65ycMH3tuvjwjlsSjL9FR7ghX3E=w640-h400-e365)
 ![Screenshot 3](https://lh3.googleusercontent.com/xIgPDbFOaEgQNbT6691xoSwYfNw6u6rfdQJJsR7UtKNvVK7CqV8yinuMvVCORI8mvaWwutA6og=w640-h400-e365)
-
+ 
 
 
    [Google Chrome]: <https://www.google.com/chrome/>
