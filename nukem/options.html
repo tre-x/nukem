@@ -63,7 +63,7 @@
          }
          #options {
          display: inline-block;
-         height: 520px;
+         height: 750px;
          margin-left: 0px;
          border: 2px solid orange;
          padding: 50px;
@@ -145,6 +145,36 @@
                      <input type="checkbox" id="nukedownloads"/>
                      <div class="control_indicator"></div>
                   </label>
+				  <label class="control control-checkbox">
+                     Nuke WebSQL
+                     <input type="checkbox" id="nukewebsql" />
+                     <div class="control_indicator"></div>
+                  </label>
+				  <label class="control control-checkbox">
+                     Nuke PluginData
+                     <input type="checkbox" id="nukeplugindata" />
+                     <div class="control_indicator"></div>
+                  </label>
+				  <label class="control control-checkbox">
+                     Nuke IndexedDB
+                     <input type="checkbox" id="nukeidb" />
+                     <div class="control_indicator"></div>
+                  </label>
+				  <label class="control control-checkbox">
+                     Nuke FileSystems
+                     <input type="checkbox" id="nukefs" />
+                     <div class="control_indicator"></div>
+                  </label>
+				  <label class="control control-checkbox">
+                     Nuke FormData
+                     <input type="checkbox" id="nukeformdata" />
+                     <div class="control_indicator"></div>
+                  </label>
+				  <label class="control control-checkbox">
+                     Nuke SBC
+                     <input type="checkbox" id="nukesbc" />
+                     <div class="control_indicator"></div>
+                  </label>
                   <p style="margin: 0 auto; padding: 20px; font-size: 23px; font-family: 'PT Sans', sans-serif; color: orange;">Auto-Nuke settings</p>
                   <label class="control control-checkbox">
                      Auto-Nuke History
@@ -160,6 +190,11 @@
                   <label class="control control-checkbox">
                      Enable Notifications
                      <input type="checkbox" id="enablenotifs"/>
+                     <div class="control_indicator"></div>
+                  </label>
+				  <label class="control control-checkbox">
+                     Nuke Active Tab
+                     <input type="checkbox" id="enableactivetab"/>
                      <div class="control_indicator"></div>
                   </label>
                </div>
