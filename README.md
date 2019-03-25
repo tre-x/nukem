@@ -1,5 +1,4 @@
 # Nuke'm - Browsing Data Cleaner for Google Chrome
-
 Nuke'm is a lightweight and easy-to-use chrome extension that clears basic and advanced Google Chrome browsing data. The best part is, what you want to delete is up to you!
 
 Nuke'm deletes:
@@ -77,3 +76,5 @@ You can configure what Nuke'm deletes in the options menu, by right clicking on 
    [Google Chrome]: <https://www.google.com/chrome/>
    [gitlink]: <https://github.com/192000/nukem/archive/master.zip>
    [weblink]: <https://chrome.google.com/webstore/detail/nukem-browsing-data-clean/enfegiojkdinjbgodgigkimlgacpbene>
+
+Version 4.0
