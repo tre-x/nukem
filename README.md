@@ -60,6 +60,8 @@ Nuke'm deletes:
 
 ### Installation
 You can download Nuke'm from the [Chrome Webstore][weblink] or the open source version from [GitHub][gitlink]
+### Alternate downloads
+You can download the beta version of Nuke'm [here][beta], or older versions of Nuke'm [here][old]
 
 ### Using Nuke'm
 
@@ -76,3 +78,5 @@ You can configure what Nuke'm deletes in the options menu, by right clicking on 
    [Google Chrome]: <https://www.google.com/chrome/>
    [gitlink]: <https://github.com/192000/nukem/archive/master.zip>
    [weblink]: <https://chrome.google.com/webstore/detail/nukem-browsing-data-clean/enfegiojkdinjbgodgigkimlgacpbene>
+   [old]: <https://github.com/192000/nukem/tree/olderversions>
+   [beta]:<https://github.com/192000/nukem/tree/betaversion>
