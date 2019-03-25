@@ -51,24 +51,24 @@ Nuke'm deletes:
 
 ---
 
-### Requirements
+# Requirements
 
 *Nuke'm* requires the following in order to run correctly:
 
 * [Google Chrome] web browser
 * Any operating system that supports Chrome
 
-### Installation
+# Installation
 You can download Nuke'm from the [Chrome Webstore][weblink] or the open source version from [GitHub][gitlink]
 ### Alternate downloads
 You can download the beta version of Nuke'm [here][beta], or older versions of Nuke'm [here][old]
 
-### Using Nuke'm
+# Using Nuke'm
 
 Simply click on the extension icon and all of your browsing data that you have configured will be deleted!
 You can configure what Nuke'm deletes in the options menu, by right clicking on the icon and selecting *Options*.
 
-### Screenshots
+# Screenshots
 ![Screenshot 1](https://lh3.googleusercontent.com/W6gwPWZQj8_DaxWyr6F2a4otovK3XWzWrGjQjLwg3_HY0KXqFUY5de67H2LU9kucbRR2fuvk3w=w640-h400-e365)
 ![Screenshot 2](https://lh3.googleusercontent.com/fM2bf9va3Wo6B48DDPjgxd0DO1gLlJGefvkonxJj4kaOaffS65ycMH3tuvjwjlsSjL9FR7ghX3E=w640-h400-e365)
 ![Screenshot 3](https://lh3.googleusercontent.com/xIgPDbFOaEgQNbT6691xoSwYfNw6u6rfdQJJsR7UtKNvVK7CqV8yinuMvVCORI8mvaWwutA6og=w640-h400-e365)
