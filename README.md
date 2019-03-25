@@ -76,5 +76,3 @@ You can configure what Nuke'm deletes in the options menu, by right clicking on 
    [Google Chrome]: <https://www.google.com/chrome/>
    [gitlink]: <https://github.com/192000/nukem/archive/master.zip>
    [weblink]: <https://chrome.google.com/webstore/detail/nukem-browsing-data-clean/enfegiojkdinjbgodgigkimlgacpbene>
-
-Version 4.0
