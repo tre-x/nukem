@@ -59,7 +59,7 @@ Nuke'm deletes:
 * Any operating system that supports Chrome
 
 # Installation
-You can download Nuke'm from the [Chrome Webstore][weblink] or the open source version from [GitHub][gitlink]
+You can download Nuke'm from the [Chrome Webstore][weblink] or the open source version from [here][gitlink]
 ### Alternate downloads
 You can download the beta version of Nuke'm [here][beta], or older versions of Nuke'm [here][old]
 
