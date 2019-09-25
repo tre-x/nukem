@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Nuke'm - Browsing Data Manager",
+    "description": "Customizable browsing data deletion with one click!",
+    "version": "5",
+    "author": "EaSePrograms",
+    "icons": {
+        "16": "imgs/16.png",
+        "48": "imgs/48.png",
+        "128": "imgs/128.png"
+    },
+    "browser_action": {
+        "default_icon": "imgs/16.png"
+    },
+    "background": {
+        "scripts": ["background.js", "autonuke.js"]
+    },
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "permissions": [
+      "browsingData",
+      "notifications",
+      "tabs",
+	  "contextMenus",
+      "history",
+	  "cookies",
+	  "http://*/*",
+	  "https://*/*"
+  ]
+}
