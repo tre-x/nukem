@@ -1,68 +1,36 @@
-# Nuke'm - Browsing Data Manager for Google Chrome
-Nuke'm is the most reliable and light-weight browsing data (cache) managment extension on the Google Chrome Webstore, designed for simplicity, speed, efficiency, and customization. Delete (nuke) browsing data from History to whatever you choose with one click.
 
-## Features
-### Customizable browsing data deletion
-Easily delete all browsing data of your choosing with one click of the extension's icon. Nuke'm also offers optional automatic deletion (auto-nuke) features.
-**Nuke'm has the ability to delete (nuke) the following:**
-  - IndexedDB
-  - FileSystems
-  - FormData
-  - PluginData
-  - Server Bound Certificates (SBC)
-  - WebSQL Data
-  - All Cache 
-  - LocalStorage
-  - History
-  - Cookies
-  - Tabs
-  - Downloads
-  - Passwords
-  
-  
-**Nuke'm also has the ability to automatically delete (auto-nuke) the following:**
-  - Cookies
-  - History
-  
+# Nuke'm Legacy
+**NOTICE: AS OF NOVEMBER 28TH, 2019 NUKE'M WILL NO LONGER RECEIVE ANY FURTHER UPDATES. BUT, THIS PROJECT WILL REMAIN ON THE GOOGLE CHROME WEB STORE UNTIL A CERTAIN BREAK POINT IS REACHED. THANK YOU FOR YOUR SUPPORT.**
 
-  
-**Nuke'm DOES NOT DELETE BROWSING DATA YOU DON'T WANT DELETED.**
-**Nuke'm can also be configured to ONLY delete browsing data from your CURRENT TAB'S URL.**
-  
+Nuke'm is a google chrome extension built to manage your browsing data fast & efficiently. Note: "Nuke/Nuked" means delete/deleted in the sense of this project.
 
 
-# Updates
-#### Version 5
-  - Fresh redesign & code improvements
-  {New features soon}
-  
-#### Version 4
-  - New Nuke Active Tab option
-    - Only nukes data (history & cookies if enabled) from the current active tab
-  - PluginData, WebSQL Data, SBC, FormData, FileSystems, and IndexedDB are now all optional
-    
-#### Version 3.3
-  - Improved notification system
-    - Notifications now show how many history entries & cookies were removed
-  - Default settings for new users
-    - History, Cache, and Notifications are enabled by default on a new install
-    
----
+Nuke'm offers many flexible features which are contained in its options menu. The program itself basically relies on user input, so it is highly recommended to configure this program on your first install.
 
-# Requirements
+**User friendly?**
+ The most notable feature this program utilizes is that Nuke'm will do exactly what *you* want it to do, *and* when to do it, *never* what *it* wants to do and when *it* wants to do it. Thus said, Nuke'm will never operate by itself as a background process unless you want it to, using the *Auto-nuke* settings. 
 
-Nuke'm requires the following:
+**How do I use it?**
+Another notable feature, Nuke'm will only execute when it's icon is clicked in the upper right. To add on to that, Nuke'm can also *exclusively* nuke *enabled* browsing data that associates with the URL of your *current open tab*. In other words, when Nuke'm is clicked, it will nuke selected browsing data from only the website in which you are currently browsing. 
 
-* [Google Chrome] web browser
-* Any operating system that supports Google Chrome
+**How do I know if it even works?**
+For those who want to re-assure the programs working capability, Nuke'm also supports desktop notifications through the google chrome browser. If that's not enough, this project is open-source, so feel free to look under the hood.
 
-# Installation
-You can download Nuke'm from the [Chrome Webstore][weblink] or from [here][gitlink].
-### Alternate downloads
+## What's nuke-able?
+Key: *italic* entries indicate Auto-nuke support
+- Cache
+- IndexedDB
+- FileSystems
+- FormData
+- PluginData
+- Server Bound Certificates
+- WebSQL Data
+- LocalStorage
+- *History*
+- *Cookies*
+- Tabs
+- Downloads
+- Passwords
 
-
-   [Google Chrome]: <https://www.google.com/chrome/>
-   [gitlink]: <https://github.com/192000/nukem/archive/master.zip>
-   [weblink]: <https://chrome.google.com/webstore/detail/nukem-browsing-data-clean/enfegiojkdinjbgodgigkimlgacpbene>
-   [old]: <https://github.com/192000/nukem/tree/olderversions/older%20versions>
-   [beta]:<https://github.com/192000/nukem/archive/betaversion.zip>
+You can download&install the program from here:
+[https://chrome.google.com/webstore/detail/nukem-browsing-data-manag/enfegiojkdinjbgodgigkimlgacpbene](https://chrome.google.com/webstore/detail/nukem-browsing-data-manag/enfegiojkdinjbgodgigkimlgacpbene)
