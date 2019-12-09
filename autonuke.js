@@ -1,4 +1,4 @@
-//AutoNuke settings
+//https://github.com/tre-x
 chrome.history.onVisited.addListener(function (HistoryItem) { // user visits website
     var o = localStorage["autonukehistory"]; //get settings
 

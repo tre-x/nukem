@@ -1,4 +1,4 @@
-//(c) 2019 Ease Programs (192000)
+//https://github.com/tre-x
 var options = {
     NukeTabs: document.querySelector('#nuketabs'),
     NukeCache: document.querySelector('#nukecache'),
@@ -18,60 +18,61 @@ var options = {
     EnableNotifs: document.querySelector('#enablenotifs'),
     EnableActiveTab: document.querySelector('#enableactivetab')
 }
+function restore_options() { // MOVED OUTSIDE OF EVENT LISTENER
+    for (var key in options) {
+        var value = options[key]
+        if (value) {
+            var lsname = value.id
+            if (localStorage.getItem(lsname) == 1) {
+                value.checked = true
+            } else if (localStorage.getItem(lsname) == 0) {
+                value.checked = false
+            }
+        }
+    }
+}
+function save_options() { // MOVED OUTSIDE OF EVENT LISTENER
+    for (var key in options) {
+        var value = options[key]
+        if (value) {
+            var lsname = value.id
+            console.log(lsname + ' - ' + value.checked)
+            if (value.checked) {
+                localStorage.setItem(lsname, 1)
+            } else {
+                localStorage.setItem(lsname, 0)
+            }
+        }
+    }
+    setTimeout(function () {
+        if (document.getElementById('save')) {
+            document.getElementById('save').innerHTML = "SAVED"
+        }
+    }, 1500)
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    restore_options()
+    if (document.getElementById('save')) {
+        document.getElementById('save').addEventListener('click', save_options)
+    }
+    if (document.getElementById('version')) {
+        document.getElementById('version').children[0].innerHTML = chrome.runtime.getManifest().version
+    }
+})
 
 chrome.runtime.onInstalled.addListener(function (details) {
     if (details.reason == "install") {
-        localStorage.setItem("enablenotifs", 1)
-        localStorage.setItem("nukehistory", 1)
-        localStorage.setItem("nukecache", 1)
+        localStorage.setItem('nukehistory', 1)
+        localStorage.setItem('enablenotifs', 1)
+        localStorage.setItem('enableactivetab', 0) // FIRST INSTALL BUG FIXED
+        save_options()
     }
 });
-document.addEventListener('DOMContentLoaded', function () {
-
-    function restore_options() {
-        for (var key in options) {
-            var value = options[key]
-            if (value) {
-                var lsname = value.id
-                if (localStorage.getItem(lsname) == 1) {
-                    value.checked = true
-                } else if (localStorage.getItem(lsname) == 0) {
-                    value.checked = false
-                }
-            }
-        }
-    }
-
-    function save_options() {
-        for (var key in options) {
-            var value = options[key]
-            if (value) {
-                var lsname = value.id
-                console.log(lsname + ' - ' + value.checked)
-                if (value.checked) {
-                    localStorage.setItem(lsname, 1)
-                } else {
-                    localStorage.setItem(lsname, 0)
-                }
-            }
-        }
-        document.getElementById("saved").innerHTML = "Saved";
-        setTimeout(function () {
-            document.getElementById("saved").innerHTML = "";
-        }, 1500)
-    }
-
-    if (document.querySelector('#save')) {
-        document.querySelector('#save').addEventListener('click', save_options);
-    }
-
-    restore_options()
-
-})
 
 
 chrome.browserAction.onClicked.addListener(function (tab) {
-
+    restore_options()
     //get item count
     var historyItemCount = 0
     var cookieCount = 0
@@ -108,21 +109,21 @@ chrome.browserAction.onClicked.addListener(function (tab) {
             if (localStorage.getItem('nukecookies') == 1 && localStorage.getItem('nukehistory') == 1) {
                 chrome.notifications.create("notify_user", {
                     type: "basic",
-                    iconUrl: "imgs/newicon4.png",
+                    iconUrl: "imgs/128.png", // NOTIFICATIONS BUG FIXED
                     title: "Nuke'm",
                     message: "Successfully nuked history entries and cookies from the current visited website!"
                 }, callback)
             } else if (localStorage.getItem('nukecookies') == 1) {
                 chrome.notifications.create("notify_user", {
                     type: "basic",
-                    iconUrl: "imgs/newicon4.png",
+                    iconUrl: "imgs/128.png",
                     title: "Nuke'm",
                     message: "Successfully nuked " + cookieCount + " cookies from the current visited website!"
                 }, callback)
             } else if (localStorage.getItem('nukehistory') == 1) {
                 chrome.notifications.create("notify_user", {
                     type: "basic",
-                    iconUrl: "imgs/newicon4.png",
+                    iconUrl: "imgs/128.png",
                     title: "Nuke'm",
                     message: "Successfully nuked all history entries from the current visited website!"
                 }, callback)
@@ -131,28 +132,28 @@ chrome.browserAction.onClicked.addListener(function (tab) {
             if (localStorage.getItem('nukecookies') == 1 && localStorage.getItem('nukehistory') == 1) {
                 chrome.notifications.create("notify_user", {
                     type: "basic",
-                    iconUrl: "imgs/newicon4.png",
+                    iconUrl: "imgs/128.png",
                     title: "Nuke'm",
                     message: "Successfully nuked " + historyItemCount + " history item(s), " + cookieCount + " cookies, and enabled browsing data!"
                 }, callback)
             } else if (localStorage.getItem('nukecookies') == 1) {
                 chrome.notifications.create("notify_user", {
                     type: "basic",
-                    iconUrl: "imgs/newicon4.png",
+                    iconUrl: "imgs/128.png",
                     title: "Nuke'm",
                     message: "Successfully nuked all " + cookieCount + " cookies!"
                 }, callback)
             } else if (localStorage.getItem('nukehistory') == 1) {
                 chrome.notifications.create("notify_user", {
                     type: "basic",
-                    iconUrl: "imgs/newicon4.png",
+                    iconUrl: "imgs/128.png",
                     title: "Nuke'm",
                     message: "Successfully nuked all " + historyItemCount + " history item(s)!"
                 }, callback)
             } else {
                 chrome.notifications.create("notify_user", {
                     type: "basic",
-                    iconUrl: "imgs/newicon4.png",
+                    iconUrl: "imgs/128.png",
                     title: "Nuke'm",
                     message: "Successfully nuked enabled browsing data!"
                 }, callback)
@@ -268,18 +269,3 @@ chrome.browserAction.onClicked.addListener(function (tab) {
         })
     }
 })
-
-var manifestData = chrome.runtime.getManifest();
-
-if (document.getElementById('version')) {
-    document.getElementById('version').children[0].innerHTML = manifestData.version
-}
-
-chrome.contextMenus.removeAll();
-chrome.contextMenus.create({
-    title: "Open Viewer",
-    contexts: ["browser_action"],
-    onclick: function () {
-        window.open('view.html')
-    }
-});

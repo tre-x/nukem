@@ -29,7 +29,7 @@ h3 {
     letter-spacing: 2px;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: black;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 #footer p {
@@ -161,7 +161,7 @@ h3 {
 }
 
 .control input:checked ~ .control_indicator {
-    background: black;
+    background: #f0c107
 }
 
 .control:hover input:not([disabled]):checked ~ .control_indicator,
